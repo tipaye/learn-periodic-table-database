@@ -1,0 +1,158 @@
+pwd
+ll
+ls --color=auto -la
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cat atomic_mass.txt
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+builtin printf "\e]633;P;ContinuationPrompt=$(echo "$PS2" | sed 's/\x1b/\\\\x1b/g')\a"
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir periodic_table
+cd periodic_table/
+git init .
+git branch main
+git status
+ls --color=auto -la
+git checkout -b main
+git branch
+git branch -a
+git status
+touch element.sh
+git add element.sh
+git commit -m "Initial commit"
+git status
+git log
+git checkout -b feat/barebones
+chmod +x element.sh
+git status
+git add element.sh
+git commit -m "feat: made element.sh executable"
+./element.sh
+git commit -m "feat: made element.sh executable"
+./element.sh
+./element.sh
+./element.sh
+./element.sh
+git add element.sh
+git commit -m "feat: ask for missing argument"
+./element.sh
+./element.sh
+./element.sh
+./element.sh
+./element.sh H
+./element.sh
+./element.sh
+./element.sh H
+__vsc_prompt_cmd_original
+./element.sh
+./element.sh 1
+./element.sh Hydrogen
+./element.sh He
+./element.sh Her
+./element.sh
+./element.sh 5
+./element.sh 5
+./element.sh 5
+./element.sh
+./element.sh
+./element.sh H
+./element.sh H
+./element.sh H
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh 1
+./element.sh H
+./element.sh Hydrogen
+./element.sh H
+./element.sh H
+./element.sh 1
+./element.sh H
+./element.sh Hydrogen
+./element.sh Helium
+./element.sh Neon
+./element.sh Neone
+git status
+git add element.sh
+git commit -m "feat: framework for finding elements in place"
+git log --oneline
+git log --oneline
+./element.sh Neone
+./element.sh Neon
+./element.sh Neon
+./element.sh Neon
+./element.sh Neon
+./element.sh Neon
+./element.sh Neon
+./element.sh 9
+./element.sh 9
+./element.sh 9
+./element.sh 9
+./element.sh 1
+./element.sh 5
+./element.sh 52
+./element.sh Ne
+./element.sh F
+./element.sh Ff
+./element.sh
+git status
+git add .
+git commit -m "feat: mostly in place now, just finishing touches"
+./element.sh
+./element.sh 77
+./element.sh 77
+./element.sh
+git status
+git add .
+git commit -m "feat: okay, all done."
+git status
+git checkout main
+git merge feat/barebones
